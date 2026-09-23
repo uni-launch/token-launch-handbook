@@ -1,0 +1,23 @@
+name: Correction
+description: Something here is wrong, outdated or unclear
+labels: ["correction"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Which page
+      placeholder: docs/fees-and-costs.md
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong
+      description: Quote the sentence if you can.
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What it should say
+      description: A source or a link to the live page helps a lot.

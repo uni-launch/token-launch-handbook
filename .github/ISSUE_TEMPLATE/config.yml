@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Help with my own token or transaction
+    url: https://unilaunch.online/open-ticket
+    about: Support can see your wallet and transaction — this repository cannot.
+  - name: Frequently asked questions
+    url: https://unilaunch.online/faq
+    about: The answers that change most often are kept current on the site.
+  - name: Knowledge base and guides
+    url: https://unilaunch.online/knowledge-base
+    about: Longer walkthroughs, in 11 languages.

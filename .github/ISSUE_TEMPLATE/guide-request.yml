@@ -1,0 +1,23 @@
+name: Guide request
+description: Suggest something this handbook should cover
+labels: ["guide request"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: The question a reader would be asking
+      placeholder: "How do I decide how much liquidity to put in at launch?"
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it is not answered today
+      description: Which existing page you looked at, and what was missing.
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - label: This is about launching or managing a token, not about a specific project or price
+          required: true

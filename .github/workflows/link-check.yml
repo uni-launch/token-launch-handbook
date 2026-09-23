@@ -1,0 +1,30 @@
+name: Links
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    # Monday morning, so a link that died over the weekend is caught before
+    # anyone reads the handbook on it.
+    - cron: "0 6 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check every link in the Markdown
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Badges are rate-limited rather than broken, and a 429 is not a
+          # dead link.
+          args: >-
+            --no-progress
+            --max-concurrency 4
+            --exclude img.shields.io
+            './**/*.md'
+          fail: true
