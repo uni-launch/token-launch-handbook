@@ -65,6 +65,10 @@ Nine networks are live today; two more are being integrated.
 | Monad | — | — | Coming soon |
 | Tempo | — | — | Coming soon |
 
+Launching on Solana? It has its own handbook — SPL versus Token-2022, the
+three authorities, metadata, rent and pools:
+[Solana Token Creator](https://github.com/uni-launch/solana-token-creator).
+
 ## What a launch costs
 
 Three separate costs, and only the first one is set by the tool:
@@ -127,6 +131,7 @@ The main site is published in 11 languages:
 | FAQ | <https://unilaunch.online/faq> |
 | Articles and tutorials | <https://unilaunch.wiki> |
 | Support | <https://unilaunch.online/open-ticket> |
+| Solana, in depth | <https://github.com/uni-launch/solana-token-creator> |
 
 ## Contributing
 
